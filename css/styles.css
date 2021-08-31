@@ -1,5 +1,6 @@
 .ourtown_blue{
     color: #00ABDF;
+    color: white;
 }
 
 .donate_btn{
@@ -10,6 +11,12 @@
     background-color: black;
 }
 
+.top_banner{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
+
 .submit_btn{
     background-color: transparent;
 }
@@ -18,13 +25,21 @@
     font-size: 48px;
     width: 300px;
     position: absolute;
-    font-weight: 900;
+    font-weight: bold;
     background-color: white;
     font-family: "Lato", sans-serif;
     text-transform: uppercase;
     text-align: center;
     margin-top: -30px;
     margin-left: 47px;
+}
+
+.divider_title_previous{
+    color: #00ABDF;
+    font-weight: bold;
+    background-color: white;
+    font-family: "Lato", sans-serif;
+    text-transform: uppercase;
 }
 
 .yellow_divider{
@@ -34,6 +49,53 @@
     border-bottom: 3px solid #FFDE40;
     position: relative;
 }
+
+/* footer styles */
+
+.connected_title{
+    font-weight: bold;
+    color: white;
+    font-family: "Lato", sans-serif;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.footer_banner{
+    background-color: #EF413D;
+}
+ .footer_banner_p{
+     display: inline-block;
+     font-size:20px; 
+ }
+
+ .signup-btn{
+     color: white;
+     font-family: "Lato", sans-serif;
+     text-transform: uppercase;
+     display: inline-block;
+     border-color: white;
+ }
+
+ .email_form{
+     display: inline-block;
+ }
+ .footer_end_banner{
+     background-color: black;
+ }
+
+ a:visited{
+     color: darkgray;
+ }
+ a:hover{
+     color: white;
+ }
+ a:link{
+     color: white;
+ }
+
+ .footer_margin{
+     margin-left: 140px;
+ }
 
 @media screen and (max-width: 1200px){
     .divider_title {
