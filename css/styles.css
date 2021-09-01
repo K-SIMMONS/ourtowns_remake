@@ -1,8 +1,20 @@
+/* general styles */
 .ourtown_blue{
     color: #00ABDF;
     color: white;
 }
 
+a:visited{
+    color: darkgray;
+}
+a:hover{
+    color: white;
+}
+a:link{
+    color: white;
+}
+
+/* navbar styles */
 .donate_btn{
     background-color: #00ABDF;
 }
@@ -21,6 +33,9 @@
     background-color: transparent;
 }
 
+
+/* homepage styles */
+
 .divider_title{
     font-size: 48px;
     width: 300px;
@@ -34,7 +49,7 @@
     margin-left: 47px;
 }
 
-.divider_title_previous{
+.divider_title_previous a{
     color: #00ABDF;
     font-weight: bold;
     background-color: white;
@@ -49,6 +64,20 @@
     border-bottom: 3px solid #FFDE40;
     position: relative;
 }
+
+
+/* latest page styles */
+
+.all_reports{
+    font-weight: bold;
+    font-family: "Lato", sans-serif;
+    
+}
+
+.page-numbers {
+   
+}
+
 
 /* footer styles */
 
@@ -83,15 +112,6 @@
      background-color: black;
  }
 
- a:visited{
-     color: darkgray;
- }
- a:hover{
-     color: white;
- }
- a:link{
-     color: white;
- }
 
  .footer_margin{
      margin-left: 140px;
