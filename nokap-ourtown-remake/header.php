@@ -8,52 +8,43 @@
  *
  * @package nokap_ourtown_remake
  */
-
 ?>
-<!doctype html>
-<html <?php language_attributes(); ?>>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="profile" href="https://gmpg.org/xfn/11">
-
-	<?php wp_head(); ?>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&amp;family=PT+Serif&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <?php wp_head(); ?>
+    <title>OurTowns Home</title>
+	
 </head>
+<body>
+    <header>
 
-<body <?php body_class(); ?>>
-<?php wp_body_open(); ?>
-<div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'nokap-ourtown-remake' ); ?></a>
-
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$nokap_ourtown_remake_description = get_bloginfo( 'description', 'display' );
-			if ( $nokap_ourtown_remake_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $nokap_ourtown_remake_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-			<?php endif; ?>
-		</div><!-- .site-branding -->
-
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'nokap-ourtown-remake' ); ?></button>
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				)
-			);
-			?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
+      <div class="container-fluid top_banner">
+        <a class="navbar-brand" href="<?php echo site_url();?>">
+              <img class="img-fluid ms-4" src="<?php echo get_theme_file_uri('/images/logo.png'); ?> " alt="logo">
+          </a>
+          <div class="top_search">
+          <form role="search" action="https://www.ourtownsfoundation.org/" method="get" class="search-form">
+            <label for="s">
+              <span class="input-group-append screen-reader-text"></span>
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            </label>
+              <button type="submit" class="search-form-sumbit">
+                <img class="" src="/images/search_icon.png" alt="search icon">
+                </button>
+              </form>
+              </div>
+              <button class="btn text-light donate_btn" type="submit">DONATE</button>
+               </div> 
+           
+      
+    </header>
