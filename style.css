@@ -125,3 +125,24 @@ a:link{
     margin-left: 30px !important;
     }
 }
+
+@media screen and (min-width: 768px) {
+    .single-post-col-left {
+      max-width: 850px !important;
+      margin-right: 10px;
+    }
+    .single-post-col-right {
+      max-width: 420px !important;
+      margin-left: 10px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .single-post-col-left {
+      max-width: 850px !important;
+      margin-right: 10px;
+    }
+    .single-post-col-right {
+      max-width: 420px !important;
+      margin-left: 10px;
+    }
+  }
