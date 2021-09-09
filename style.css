@@ -1,0 +1,226 @@
+/* general styles */
+.ourtown_blue{
+    color: #00ABDF;
+    color: white;
+}
+
+a:visited{
+    color: darkgray;
+}
+a:hover{
+    color: white;
+}
+a:link{
+    color: white;
+}
+
+/* navbar styles */
+.donate_btn{
+    background-color: #00ABDF;
+}
+
+.my_nav{
+    background-color: black;
+}
+
+.top_banner{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.submit_btn{
+    background-color: transparent;
+}
+
+
+/* homepage styles */
+
+.divider_title{
+    font-size: 48px;
+    width: 300px;
+    position: absolute;
+    font-weight: bold;
+    background-color: white;
+    font-family: "Lato", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: -30px;
+    margin-left: 47px;
+}
+
+.divider_title_previous a{
+    color: #00ABDF;
+    font-weight: bold;
+    background-color: white;
+    font-family: "Lato", sans-serif;
+    text-transform: uppercase;
+}
+
+.yellow_divider{
+    max-width: 1392px;
+    margin: 100px 0px;
+    width: 100%;
+    border-bottom: 3px solid #FFDE40;
+    position: relative;
+}
+
+
+/* latest page styles */
+
+.all_reports{
+    font-weight: bold;
+    font-family: "Lato", sans-serif;
+    
+}
+
+.page-numbers {
+   
+}
+
+/* ABout Us Page */
+
+.main {
+    max-width: 1400px;
+    margin: auto;
+    margin-top: 60px;
+    display: block;
+    
+}
+
+.bruhp {
+    margin-bottom: 1.5em;
+    font-family: "PT Serif", serif;
+    font-size: 20px;
+    line-height: 175%;
+    margin-top: 0;
+}
+
+
+.page-title {
+    font-family: "Lato", sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 48px;
+}
+
+#bruh {
+    margin-left: 80px;
+}
+.dash {
+    padding-left: 250px;
+}
+
+.dash2 {
+    padding-left: 170px;
+}
+
+.dash:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+  }
+
+  .hh2 {
+    clear: both;
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-size: 2rem;
+    line-height: 1.2;
+}
+  .wp-block-button__link {
+      margin-left: 140px;
+      margin-top: 30px;
+      display: flex;
+      justify-content: baseline;
+      
+  }
+
+  .name-hr {
+    height: 3.83125px;
+    margin-top: 1rem;
+    margin-bottom: 20px;
+    margin-left: 0;
+    width: 3rem;
+}
+
+.dash3 {
+    padding-left: 200px;
+}
+
+
+
+/* footer styles */
+
+.connected_title{
+    font-weight: bold;
+    color: white;
+    font-family: "Lato", sans-serif;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.footer_banner{
+    background-color: #EF413D;
+}
+ .footer_banner_p{
+     display: inline-block;
+     font-size:20px; 
+ }
+
+ .signup-btn{
+     color: white;
+     font-family: "Lato", sans-serif;
+     text-transform: uppercase;
+     display: inline-block;
+     border-color: white;
+ }
+
+ .email_form{
+     display: inline-block;
+ }
+ .footer_end_banner{
+     background-color: black;
+ }
+
+
+ .footer_margin{
+     margin-left: 140px;
+ }
+
+@media screen and (max-width: 1200px){
+    .divider_title {
+    font-size: 30px;
+    width: 180px;
+    margin-top: -20px !important;
+    margin-left: 30px !important;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .single-post-col-left {
+      max-width: 850px !important;
+      margin-right: 10px;
+    }
+    .single-post-col-right {
+      max-width: 420px !important;
+      margin-left: 10px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .single-post-col-left {
+      max-width: 850px !important;
+      margin-right: 10px;
+    }
+    .single-post-col-right {
+      max-width: 420px !important;
+      margin-left: 10px;
+    }
+  }
