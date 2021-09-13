@@ -2,7 +2,7 @@
 
 <?php get_header();?>
 
-<div>
+<div class="about-title">
 
 <?php 
 echo the_title();
