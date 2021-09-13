@@ -224,3 +224,42 @@ a:link{
       margin-left: 10px;
     }
   }
+
+  /* Stephen Single Page  */
+
+  .img-fluid-single img {
+      max-width: 100%;
+      height: auto;
+      width: 100%;
+      margin-bottom: 1rem;
+      vertical-align: middle;
+  }
+
+  .single-page-title {
+      font-family: "Lato", sans-serif;
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: 48px;
+  }
+
+  .title-hr {
+      height: 5px!important;
+      background-color: #00ABDF;
+      margin-right: 90%;
+      opacity: 100%;
+  }
+
+/* Need to ask team if a tags above can be specific  */
+
+  .single-category-text {
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #EF413D !important;
+    text-decoration: none !important;
+  }
