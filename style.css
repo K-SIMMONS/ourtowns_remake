@@ -4,7 +4,9 @@
     color: white;
 }
 
-a:visited{
+/* Commenting these out due to global issues  */
+
+/* a:visited{
     color: darkgray;
 }
 a:hover{
@@ -12,7 +14,7 @@ a:hover{
 }
 a:link{
     color: white;
-}
+} */
 
 /* navbar styles */
 .donate_btn{
@@ -227,6 +229,11 @@ a:link{
 
   /* Stephen Single Page  */
 
+  .site-main {
+    max-width: 1400px;
+    margin: auto;
+}
+
   .img-fluid-single img {
       max-width: 100%;
       height: auto;
@@ -250,7 +257,7 @@ a:link{
       opacity: 100%;
   }
 
-/* Need to ask team if a tags above can be specific  */
+/* Need to ask team if 'a' tags above can be specific  */
 
   .single-category-text {
     font-family: "Lato", sans-serif;
@@ -263,3 +270,107 @@ a:link{
     color: #EF413D !important;
     text-decoration: none !important;
   }
+
+  .single-body-text {
+    font-family: "PT Serif", serif;
+    font-size: 20px;
+    line-height: 175%;
+  }
+
+  .avatar-radius {
+      border-radius: 100%;
+      margin-right: .7rem;
+  }
+
+  .posted-on {
+    font-family: "PT Serif", serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    color: #7192A9;
+  }
+
+  .posted-by a {
+    font-weight: bold;
+    color: #5c7789;
+    font-style: italic;
+    text-decoration: none;
+  }
+
+  .image-credit-text {
+    font-family: "PT Serif", serif;
+    font-size: 12px;
+    text-align: end;
+}
+
+/* Single Page Sidebar  */
+
+.widget-title {
+    font-family: "Lato", sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    color: #00ABDF;
+    position: relative;
+    display: inline;
+    z-index: 10;
+    background-color: white;
+    padding-right: 1rem;
+    text-transform: uppercase;
+}
+
+.single-sidebar-line {
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: #FFDE40;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.sidebar-category-text {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #EF413D !important;
+    font-weight: bold;
+}
+
+.related-list-item {
+    text-decoration: none;
+    font-family: "Lato", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 20px;
+    letter-spacing: .05em;
+    overflow: hidden;
+    color: #394955;
+}
+
+.sidebar-list-item {
+    list-style-type: none;
+}
+
+.sidebar-a {
+    text-decoration: none !important;
+}
+
+.gallery-item {
+    display: flex;
+    flex-direction: row;
+}
+
+.gallery-item:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+.size-thumbnail {
+    height: 75px;
+    width: 75px;
+    margin-right: 1rem;
+}
