@@ -322,6 +322,12 @@ a:link{
     text-transform: uppercase;
 }
 
+.related_posts_list {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding: 0;
+}
+
 .single-sidebar-line {
     position: absolute;
     height: 3px;
@@ -332,11 +338,16 @@ a:link{
     margin: auto;
 }
 
+.sidebar-thumbnail-size {
+    height: 75px;
+}
+
 .sidebar-category-text {
     font-size: 12px;
     text-transform: uppercase;
     color: #EF413D !important;
     font-weight: bold;
+    margin-bottom: 0.5rem;
 }
 
 .related-list-item {
@@ -373,4 +384,45 @@ a:link{
     height: 75px;
     width: 75px;
     margin-right: 1rem;
+}
+
+hr {
+    background-color: #FFDE40;
+    border: 0;
+    height: 3px !important;
+    margin-bottom: 1.5em;
+    opacity: 100%
+}
+
+/* Single Page Category Bottom  */
+
+.topic-container {
+    margin: 3rem 0 5rem;
+}
+
+.topic-title {
+    color: #C6D3DD;
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 25px;
+    letter-spacing: 0.05em;
+    margin-right: 0.7em;
+}
+
+.topics-bottom {
+    border: 1px solid #ffd8d7;
+    padding: 0 0.5rem;
+    margin: 0 0.5rem 0.8rem;
+    color: #EF413D;
+    text-decoration: none !important;
+    color: #EF413D;
+    font-family: "Lato", sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0.05em;
+    text-align: center;
 }

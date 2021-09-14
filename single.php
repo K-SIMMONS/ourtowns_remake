@@ -30,7 +30,7 @@ if( have_posts() ):
 						$args = array(
 							'class' => 'avatar-radius'
 						);
-						echo get_avatar( 'srussell@alphaworks.tech', 55, '', '', $args);
+						echo get_avatar( get_the_author_email(), 55, '', '', $args);
 						?>
 					</div>
 		
@@ -42,10 +42,10 @@ if( have_posts() ):
 		
 		</header>
 		
-		<main>
+		<main class = "container">
 
-			 <div class = "container">
-				 <div class="row justify-content-between">
+			 <div>
+				 <div class="row justify-content-start">
 					<div class = "col-lg-7 single-post-col-left">
 						<div class="mb-3">
                 			<?php the_post_thumbnail('full', array('class' => 'img-fluid mb-3')); ?>
@@ -55,15 +55,28 @@ if( have_posts() ):
 						<div class="single-body-text">
 						<?php the_content();?>
 						</div>
+
+						<div>
+
+							<div class="d-flex topic-container">
+								<p class="mb-0 topic-title">TOPICS: </p>
+								<div class="d-flex flex-wrap">
+									<?php
+									foreach ($category as $item)
+									echo '<a class = "topics-bottom" href="' . get_category_link($item->term_id) . '">' . $item->name . '</a>';
+									?>
+								</div>
+							</div>
+
+						</div>
 					</div> <!-- col -->
 
-					<div class="col-lg-4">
+					<div class="col me-auto">
 						<?php get_template_part( 'single-page-sidebar' ); ?>
 					</div>
 
 				</div> <!-- row -->
 			</div> <!-- container -->
-
 		</main>
 		
 		

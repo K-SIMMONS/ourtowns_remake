@@ -225,9 +225,9 @@ if ( ! function_exists( 'tf_get_related_posts' ) ) {
             ];
  
             $get_posts = new WP_Query( $related_args );
-			$category = get_the_category();
- 
+			
             if ( $get_posts->have_posts() ) :
+
 				echo '<div class="position-relative mb-4">
 							<p class="widget-title">RELATED ARTICLES</p>
 							<div class="single-sidebar-line"></div>
@@ -235,13 +235,15 @@ if ( ! function_exists( 'tf_get_related_posts' ) ) {
                 echo '<ul class="related_posts_list">';
  
                 while ( $get_posts->have_posts() ) : $get_posts->the_post();
+				$category = get_the_category();
+ 
 					echo '<li class="sidebar-list-item">
 							<a class="sidebar-a" href="'.get_the_permalink().'">';
-						echo '<div class="gallery-item mb-3">
-								<div>'; 
+						echo '<div class="gallery-item">
+								<div class="size-thumbnail">'; 
 								echo the_post_thumbnail('full', array ('class' => 'size-thumbnail')) . '</div>
 									<div>
-										<p class="sidebar-category-text">' . $category[0]->name . '</p>
+										<p class="sidebar-category-text mb-0">' . $category[0]->cat_name . '</p>
 										<p class="related-list-item">' . get_the_title() . '</p>
 									</div>
 								</div>
