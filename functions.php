@@ -91,18 +91,40 @@ if ( ! function_exists( 'nokap_ourtown_remake_setup' ) ) :
 		 *
 		 * @link https://codex.wordpress.org/Theme_Logo
 		 */
-		add_theme_support(
-			'custom-logo',
-			array(
-				'height'      => 250,
-				'width'       => 250,
-				'flex-width'  => true,
-				'flex-height' => true,
-			)
-		);
+		// add_theme_support(
+		// 	'custom-logo',
+		// 	array(
+		// 		'height'      => 250,
+		// 		'width'       => 250,
+		// 		'flex-width'  => true,
+		// 		'flex-height' => true,
+		// 	)
+		// );
 	}
 endif;
 add_action( 'after_setup_theme', 'nokap_ourtown_remake_setup' );
+
+function theme_prefix_setup() {
+	add_theme_support(
+		'custom-logo',
+		array(
+			'height'      => 250,
+			'width'       => 250,
+			'flex-width'  => true,
+			'flex-height' => true,
+		)
+	);
+}
+
+add_action ('after_setup_theme', 'theme_prefix_setup');
+
+function theme_prefix_the_custom_logo() {
+	
+	if ( function_exists( 'the_custom_logo' ) ) {
+		the_custom_logo();
+	}
+
+}
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
@@ -193,6 +215,12 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
+
+
+
+
+
+
 
 /*@ Get Related Posts */
 if ( ! function_exists( 'tf_get_related_posts' ) ) {
