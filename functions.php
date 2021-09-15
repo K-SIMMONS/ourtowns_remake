@@ -133,6 +133,18 @@ function nokap_ourtown_remake_widgets_init() {
 			'after_title'   => '</h2>',
 		)
 	);
+
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Single-Page Sidebar', 'nokap-ourtown-remake' ),
+			'id'            => 'sidebar-single',
+			'description'   => esc_html__( 'Add widgets here.', 'nokap-ourtown-remake' ),
+			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h2 class="widget-title">',
+			'after_title'   => '</h2>',
+		)
+	);
 }
 add_action( 'widgets_init', 'nokap_ourtown_remake_widgets_init' );
 
@@ -180,5 +192,74 @@ require get_template_directory() . '/inc/customizer.php';
  */
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
+}
+
+/*@ Get Related Posts */
+if ( ! function_exists( 'tf_get_related_posts' ) ) {
+ 
+    function tf_get_related_posts() {
+         
+        ob_start();
+ 
+        $id = get_the_ID();  
+ 
+        /*@ Get current post's categories */
+        $categories = get_the_category($id); // Disabled this if you want tag wise posts 
+ 
+        /*@ Get current post's Tags */
+        // $categories = wp_get_post_tags($id); // Enable this for tags wise related posts
+ 
+ 
+        if (!empty($categories)) :
+ 
+            /*@ Pluck all categories Ids */
+            $categories_ids = array_column( $categories, 'term_id' );
+ 
+            $related_args = [
+                'post_status'         => 'publish',
+                'category__in'        => $categories_ids, // Disabled this if you want tag wise posts
+                //'tag__in'        => $categories_ids, // Enable this for tag wise related posts
+                'post__not_in'        => [ $id ], // Exclude Current Post
+                'posts_per_page'      => 5, // Number of related posts to show
+                'ignore_sticky_posts' => 1
+            ];
+ 
+            $get_posts = new WP_Query( $related_args );
+			
+            if ( $get_posts->have_posts() ) :
+
+				echo '<div class="position-relative mb-4">
+							<p class="widget-title">RELATED ARTICLES</p>
+							<div class="single-sidebar-line"></div>
+						</div>';
+                echo '<ul class="related_posts_list">';
+ 
+                while ( $get_posts->have_posts() ) : $get_posts->the_post();
+				$category = get_the_category();
+ 
+					echo '<li class="sidebar-list-item">
+							<a class="sidebar-a" href="'.get_the_permalink().'">';
+						echo '<div class="gallery-item mb-3">
+								<div class="size-thumbnail">'; 
+								echo the_post_thumbnail('full', array ('class' => 'size-thumbnail')) . '</div>
+									<div>
+										<p class="sidebar-category-text mb-0">' . $category[0]->cat_name . '</p>
+										<p class="related-list-item mb-0">' . get_the_title() . '</p>
+									</div>
+								</div>
+							</a>
+						</li>';
+                endwhile;
+				
+                echo '</ul>';
+ 
+            endif;
+           
+        endif; 
+ 
+        return ob_get_clean(); 
+ 
+    }
+    add_shortcode('tf_related_posts', 'tf_get_related_posts');
 }
 

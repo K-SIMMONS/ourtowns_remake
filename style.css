@@ -4,7 +4,13 @@
     color: white;
 }
 
-a:visited{
+a {
+    text-decoration: none;
+}
+
+/* Commenting these out due to global issues  */
+
+/* a:visited{
     color: darkgray;
 }
 a:hover{
@@ -12,7 +18,7 @@ a:hover{
 }
 a:link{
     color: white;
-}
+} */
 
 /* navbar styles */
 .donate_btn{
@@ -224,3 +230,231 @@ a:link{
       margin-left: 10px;
     }
   }
+
+  /* Stephen Single Page  */
+
+  .site-main {
+    max-width: 1400px;
+    margin: auto;
+}
+
+  .img-fluid-single img {
+      max-width: 100%;
+      height: auto;
+      width: 100%;
+      margin-bottom: 1rem;
+      vertical-align: middle;
+  }
+
+  .single-page-title {
+      font-family: "Lato", sans-serif;
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: 48px;
+  }
+
+  .title-hr {
+      height: 5px!important;
+      background-color: #00ABDF;
+      margin-right: 90%;
+      opacity: 100%;
+  }
+
+/* Need to ask team if 'a' tags above can be specific  */
+
+  .single-category-text {
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #EF413D !important;
+    text-decoration: none !important;
+  }
+
+  .single-body-text {
+    font-family: "PT Serif", serif;
+    font-size: 20px;
+    line-height: 175%;
+  }
+
+  .avatar-radius {
+      border-radius: 100%;
+      margin-right: .7rem;
+  }
+
+  .posted-on {
+    font-family: "PT Serif", serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    color: #7192A9;
+  }
+
+  .posted-by a {
+    font-weight: bold;
+    color: #5c7789;
+    font-style: italic;
+    text-decoration: none;
+  }
+
+  .image-credit-text {
+    font-family: "PT Serif", serif;
+    font-size: 12px;
+    text-align: end;
+}
+
+/* Single Page Sidebar  */
+
+.main {
+    max-width: 1400px;
+    padding: 0 50px;
+    margin: auto;
+}
+
+.widget-title {
+    font-family: "Lato", sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    color: #00ABDF;
+    position: relative;
+    display: inline;
+    z-index: 10;
+    background-color: white;
+    padding-right: 1rem;
+    text-transform: uppercase;
+}
+
+.related_posts_list {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding: 0;
+}
+
+.single-sidebar-line {
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: #FFDE40;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.sidebar-thumbnail-size {
+    height: 75px;
+}
+
+.sidebar-category-text {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #EF413D !important;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.related-list-item {
+    text-decoration: none;
+    font-family: "Lato", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 20px;
+    letter-spacing: .05em;
+    overflow: hidden;
+    color: #394955;
+}
+
+.sidebar-list-item {
+    list-style-type: none;
+}
+
+.sidebar-a {
+    text-decoration: none !important;
+}
+
+.gallery-item {
+    display: flex;
+    flex-direction: row;
+}
+
+.gallery-item:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+.size-thumbnail {
+    height: 75px;
+    width: 75px;
+    margin-right: 1rem;
+}
+
+hr {
+    background-color: #FFDE40;
+    border: 0;
+    height: 3px !important;
+    margin-bottom: 1.5em;
+    opacity: 100%
+}
+
+/* Single Page Category Bottom  */
+
+.topic-container {
+    margin: 3rem 0 5rem;
+}
+
+.topic-title {
+    color: #C6D3DD;
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 25px;
+    letter-spacing: 0.05em;
+    margin-right: 0.7em;
+}
+
+.topics-bottom {
+    border: 1px solid #ffd8d7;
+    padding: 0 0.5rem;
+    margin: 0 0.5rem 0.8rem;
+    color: #EF413D;
+    text-decoration: none !important;
+    color: #EF413D;
+    font-family: "Lato", sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0.05em;
+    text-align: center;
+}
+
+.button-container {
+    margin: 4rem auto 7rem;
+}
+
+.back-button {
+    border: 2px solid #EF413D;
+    background-color: transparent;
+    padding: 15px 55px;
+    margin: auto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    color: #EF413D;
+    text-transform: uppercase;
+    display: flex;
+    width: fit-content;
+}
