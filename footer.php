@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package our-towns-site
+ * @package nokap_ourtown_remake
  */
 
 ?>
