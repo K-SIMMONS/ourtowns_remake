@@ -226,3 +226,23 @@ a:link{
       margin-left: 10px;
     }
   }
+
+
+  /* About page buttons */
+
+
+  .rectangleButton a {
+    border-radius: 0;
+    font-family: "lato", sans-serif;
+    font-weight: bold;
+    
+    }
+    .rectangleButton:hover {
+        
+        background-color: red;
+        text-decoration: none;
+    }
+    .rectangleButton a:hover{
+        text-decoration: none;
+        color:white;
+    }
