@@ -16,24 +16,26 @@ get_header();
 
     <div class="press-page">
 <?
-$pressDate = new DateTime(get_field('date'));
-$externalURL = get_field('external_link');
+
 if( have_posts() ):
     while( have_posts() ):
-        the_post();?>          
+        the_post();
+            $pressDate = new DateTime(get_field('date'));
+            $externalURL = get_field('external_link');
+        ?>          
 
                 <!-- Main Content -->
 
                 <article>
-                    <div class="news-post">
-                        <div>
-                            <a target="_blank" href="<?php echo $externalURL ?>"> <?php the_post_thumbnail(); ?> </a>
+                    <div class="news-post row">
+                        <div class="col-12 col-md-4 d-flex justify-content-center align-items-center">
+                            <a class="news-post-link" target="_blank" href="<?php echo $externalURL ?>"> <?php the_post_thumbnail( 'full', array('class' => 'img-fluid')); ?> </a>
                         </div>
 
-                        <div>
-                            <?php echo $pressDate->format('F j, Y') ?>
-                            <?php the_title(); ?>
-                            <?php the_content(); ?>
+                        <div class="col-12 col-md-8">
+                            <p class="press-post-date sidebar-category-text"><?php echo $pressDate->format('F j, Y') ?></p>
+                            <h2 class="press-post-title"><?php the_title(); ?></h2>
+                            <p class="press-post-content single-body-text"><?php the_content(); ?></p>
                         </div>
                     </div>
                 </article>

@@ -174,7 +174,7 @@ add_action( 'widgets_init', 'nokap_ourtown_remake_widgets_init' );
  * Enqueue scripts and styles.
  */
 function nokap_ourtown_remake_scripts() {
-	wp_enqueue_style('bootstrap_stylesheet',  get_theme_file_uri('/css/bootstrap.min.css'));
+	wp_enqueue_style('bootstrap_stylesheet', get_theme_file_uri('/css/bootstrap.min.css'));
     wp_enqueue_style('main_stylesheet', get_theme_file_uri('/style.css'));
     wp_enqueue_script('bootstrap_javascript' , get_theme_file_uri('/js/bootstrap.min.js'));
 	
