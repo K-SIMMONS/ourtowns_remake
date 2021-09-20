@@ -1,0 +1,663 @@
+/* general styles */
+.ourtown_blue{
+    color: #00ABDF;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Commenting these out due to global issues  */
+
+/* a:visited{
+    color: darkgray;
+}
+a:hover{
+    color: white;
+}
+a:link{
+    color: white;
+} */
+
+/* navbar styles */
+.donate_btn{
+    background-color: #00ABDF;
+}
+
+.my_nav{
+    background-color: black;
+}
+
+.top_banner{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.submit_btn{
+    background-color: transparent;
+}
+
+
+/* homepage styles */
+
+.divider_title{
+    font-size: 48px;
+    width: 300px;
+    position: absolute;
+    font-weight: bold;
+    background-color: white;
+    font-family: "Lato", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: -30px;
+    margin-left: 47px;
+}
+
+.divider_title_previous a{
+    color: #00ABDF;
+    font-weight: bold;
+    background-color: white;
+    font-family: "Lato", sans-serif;
+    text-transform: uppercase;
+}
+
+.yellow_divider{
+    max-width: 1392px;
+    margin: 100px 0px;
+    width: 100%;
+    border-bottom: 3px solid #FFDE40;
+    position: relative;
+}
+
+
+/* latest page styles */
+
+.all_reports{
+    font-weight: bold;
+    font-family: "Lato", sans-serif;
+    
+}
+
+
+  /* Stephen Styling */
+  
+  /* Single Page  */
+
+  .site-main {
+    max-width: 1400px;
+    margin: auto;
+}
+
+  .img-fluid-single img {
+      max-width: 100%;
+      height: auto;
+      width: 100%;
+      margin-bottom: 1rem;
+      vertical-align: middle;
+  }
+
+  .single-page-title {
+      text-transform: uppercase;
+      font-family: "Lato", sans-serif;
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: 48px;
+  }
+
+  .title-hr {
+      height: 5px!important;
+      background-color: #00ABDF;
+      margin-right: 90%;
+      opacity: 100%;
+  }
+
+  .single-category-text {
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #EF413D !important;
+    text-decoration: none !important;
+  }
+
+  .single-body-text {
+    font-family: "PT Serif", serif;
+    font-size: 20px;
+    line-height: 175%;
+  }
+
+  .avatar-radius {
+      border-radius: 100%;
+      margin-right: .7rem;
+  }
+
+  .posted-on {
+    font-family: "PT Serif", serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    color: #7192A9;
+  }
+
+  .posted-by a {
+    font-weight: bold;
+    color: #5c7789;
+    font-style: italic;
+    text-decoration: none;
+  }
+
+  .image-credit-text {
+    font-family: "PT Serif", serif;
+    font-size: 12px;
+    text-align: end;
+}
+
+/* Single Page Sidebar  */
+
+.main {
+    max-width: 1400px;
+    padding: 0 50px;
+    margin: auto;
+}
+
+.widget-title {
+    font-family: "Lato", sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    color: #00ABDF;
+    position: relative;
+    display: inline;
+    z-index: 10;
+    background-color: white;
+    padding-right: 1rem;
+    text-transform: uppercase;
+}
+
+.related_posts_list {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding: 0;
+}
+
+.single-sidebar-line {
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: #FFDE40;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.sidebar-thumbnail-size {
+    height: 75px;
+}
+
+.sidebar-category-text {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #EF413D !important;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.related-list-item {
+    text-decoration: none;
+    font-family: "Lato", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 20px;
+    letter-spacing: .05em;
+    overflow: hidden;
+    color: #394955;
+}
+
+.sidebar-list-item {
+    list-style-type: none;
+}
+
+.sidebar-a {
+    text-decoration: none !important;
+}
+
+.gallery-item {
+    display: flex;
+    flex-direction: row;
+}
+
+.gallery-item:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+.size-thumbnail {
+    height: 75px;
+    width: 75px;
+    margin-right: 1rem;
+}
+
+hr {
+    background-color: #FFDE40;
+    border: 0;
+    height: 3px !important;
+    margin-bottom: 1.5em;
+    opacity: 100%
+}
+
+/* Single Page Category Bottom  */
+
+.topic-container {
+    margin: 3rem 0 5rem;
+}
+
+.topic-title {
+    color: #C6D3DD;
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 25px;
+    letter-spacing: 0.05em;
+    margin-right: 0.7em;
+}
+
+.topics-bottom {
+    border: 1px solid #ffd8d7;
+    padding: 0 0.5rem;
+    margin: 0 0.5rem 0.8rem;
+    color: #EF413D;
+    text-decoration: none !important;
+    color: #EF413D;
+    font-family: "Lato", sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0.05em;
+    text-align: center;
+}
+
+.button-container {
+    margin: 4rem auto 7rem;
+}
+
+.back-button {
+    border: 2px solid #EF413D;
+    background-color: transparent;
+    padding: 15px 55px;
+    margin: auto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    color: #EF413D;
+    text-transform: uppercase;
+    display: flex;
+    width: fit-content;
+}
+
+/* Stephen's Footer Style */
+
+/* Top footer section  */
+
+.stay-connected {
+    height: 104px;
+    padding: 0 11.5%;
+    background-color: #EF413D;
+}
+
+.stay-connected-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1400px;
+    height: 100%;
+    width: 100%;
+}
+
+.sc-text-container {
+    display: flex;
+    align-items: center;
+}
+
+.sc-h3 {
+    font-size: 36px;
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+}
+
+.sc-p {
+    margin-top: 0;
+    font-size: 20px;
+    margin-left: 18px;
+    margin-bottom: 5px;
+    color:white;
+    font-family: "Lato", sans-serif;
+}
+
+.sc-signup {
+    display: flex;
+    align-items: center;
+}
+
+.sc-signup-container {
+	display: flex;
+	width: 450px;
+	justify-content: space-between;
+}
+
+#email {
+	width: 311px;
+	background-color: white;
+	border: 1px solid white;
+	border-radius: 0px;
+	font-family: "Lato", sans-serif;
+	color: #8DA8BA;
+	padding-left: 16px;
+	margin-right: 6px;
+}
+
+#button {
+	width: 145px;
+	color: white;
+	background-color: transparent;
+	border: 2px solid white;
+	border-radius: 0px;
+	font-family: "Lato", sans-serif;
+	padding: 14px;
+}
+
+/* Middle footer section */
+
+body {
+    margin: 0;
+}
+
+.footer-content {
+    background-color: black;
+    padding: 50px 11.5%;
+}
+
+.footer-content-display {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1400px;
+    height: 100%;
+    width: 100%;
+}
+
+.footer-font {
+    width: 556px;
+    font-family: "PT Serif", serif;
+    color: #E3E9EE;
+    font-size: 14px;
+    margin-bottom: 0;
+    line-height: 175%;
+}
+
+/* Bottom footer section  */
+
+.footer-bottom {
+    background-color: #1C252A;
+    padding: 0 11.5%;
+    height: 80px;
+}
+
+.footer-bottom-content-display {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1400px;
+    height: 100%;
+    width: 100%;
+}
+
+.bottom-footer-text-container {
+    display: flex;
+}
+
+.bottom-footer-font {
+    color: white;
+    font-size: 14px;
+	margin: none;	
+}
+
+.span {
+    margin-left: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.privacy-policy {
+    color: #7192A9;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.privacy-policy:hover {
+    color: white;
+}
+
+.contact-border input {
+	border: 1px solid #00ABDF !important;
+	height: 60px !important;
+	
+}
+
+/* Media Queries  */
+
+/* Min Width */
+
+@media screen and (min-width: 768px) {
+    .single-post-col-left {
+      max-width: 850px !important;
+      margin-right: 10px;
+    }
+    .single-post-col-right {
+      max-width: 420px !important;
+      margin-left: 10px;
+    }
+  }
+
+  /* Max Width  */
+
+  @media screen and (max-width: 992px) {
+
+	.sc-signup-container {
+		flex-direction: column;
+		width: 310px;
+        align-items: center;
+	}
+
+	#email {
+		width: 100%;
+		margin-right: 0px;
+		height: 50px;
+		margin-bottom: 17px;
+	}
+
+	#button {
+		width: 100%;
+		height: 50px;
+	}
+
+    .stay-connected {
+        height: 276px;
+    }
+
+    .stay-connected-content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sc-text-container {
+        flex-direction: column;
+    }
+    
+    .footer-content {
+        display: none;
+    }
+
+    .footer-content-display {
+        display: none;
+    }
+
+    .footer-bottom {
+        height: 329px;
+        padding-top: 37px;
+    }
+
+    .footer-bottom-content-display {
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+    }
+
+    .bottom-footer-text-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 37px;
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .divider_title {
+    font-size: 30px;
+    width: 180px;
+    margin-top: -20px !important;
+    margin-left: 30px !important;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .footer-font {
+        width: 400px;
+    }
+
+    .bottom-footer-font {
+        font-size: 14px;
+    }
+
+	.sc-signup-container {
+		width: 370px;
+	}
+
+	#email {
+		width: 250px;
+		margin-right: 0px;
+	}
+
+	#button {
+		width: 110px;
+	}
+
+}
+
+/* Old CSS */
+
+/* footer styles */
+
+/* .connected_title{
+    font-weight: bold;
+    color: white;
+    font-family: "Lato", sans-serif;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.footer_banner{
+    background-color: #EF413D;
+}
+ .footer_banner_p{
+     display: inline-block;
+     font-size:20px; 
+ }
+
+ .signup-btn{
+     color: white;
+     font-family: "Lato", sans-serif;
+     text-transform: uppercase;
+     display: inline-block;
+     border-color: white;
+ }
+
+ .email_form{
+     display: inline-block;
+ }
+ .footer_end_banner{
+     background-color: black;
+ }
+
+
+ .footer_margin{
+     margin-left: 140px;
+ }
+
+@media screen and (max-width: 1200px){
+    .divider_title {
+    font-size: 30px;
+    width: 180px;
+    margin-top: -20px !important;
+    margin-left: 30px !important;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .single-post-col-left {
+      max-width: 850px !important;
+      margin-right: 10px;
+    }
+    .single-post-col-right {
+      max-width: 420px !important;
+      margin-left: 10px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .single-post-col-left {
+      max-width: 850px !important;
+      margin-right: 10px;
+    }
+    .single-post-col-right {
+      max-width: 420px !important;
+      margin-left: 10px;
+    }
+  }
+
+
+  /* About page buttons */
+
+
+  .rectangleButton a {
+    border-radius: 0;
+    font-family: "lato", sans-serif;
+    font-weight: bold;
+    
+    }
+    .rectangleButton:hover {
+        
+        background-color: red;
+        text-decoration: none;
+    }
+    .rectangleButton a:hover{
+        text-decoration: none;
+        color:white;
+    }
