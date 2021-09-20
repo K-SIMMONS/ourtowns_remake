@@ -17,9 +17,18 @@ get_header();
     <div class="press-page">
 <?
 
-if( have_posts() ):
-    while( have_posts() ):
-        the_post();
+$args = array(
+    'post_type' => 'press',
+    'order' => 'ASC',
+    'paged' => get_query_var('paged', 1)
+);
+
+$pressPosts = new WP_Query($args);
+
+if( $pressPosts->have_posts() ):
+    while( $pressPosts->have_posts() ):
+        $pressPosts->the_post();
+        
             $pressDate = new DateTime(get_field('date'));
             $externalURL = get_field('external_link');
         ?>          
@@ -39,12 +48,22 @@ if( have_posts() ):
                         </div>
                     </div>
                 </article>
-            
-
-
 <?php    
 	endwhile;
-endif; ?>
+
+endif;?>
+
+<!-- Pagination -->
+        <div class="pagination d-flex">
+            <?php
+            echo paginate_links(array(
+                'total' => $pressPosts->max_num_pages,
+                'next_text' => '>',
+                'prev_text' => '<'
+            ));
+
+            ?>
+        </div>
 
     </div>
 </main>
