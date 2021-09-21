@@ -27,7 +27,7 @@
     <div class="container yellow_divider">
         <div class="row">
             <div class="col">
-                <h1 class="divider_title_previous"><a href="#">Previous Reports</a></h1>
+                <h1 class="divider_title_previous"><a href="page-latest.php">Previous Reports</a></h1>
                 <p><a href="#">Read past content from the website here.</a></p>
             </div>
         </div>
