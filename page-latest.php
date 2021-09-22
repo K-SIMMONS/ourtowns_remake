@@ -20,15 +20,18 @@ $query = new WP_Query(array(
     ));
 
 $post_count = $query->post_count;
-$posts_per_column = ceil($post_count / 4);      
+$posts_per_column = ceil($post_count / 6);      
 
 $rows = array();                                            
 $count = 0;
 while ($query->have_posts())
-{ $query->the_post(); 
+{ $query->the_post();
+    $category = get_the_category();
 if($rows[$count] == ""){ $rows[$count] = '<div class="row">'; }
-$rows[$count] = $rows[$count] . '<div class="col-sm-3">' .
-'<div class="latest-post-category">'. the_category(', ') .'</div>'.
+$rows[$count] = $rows[$count] . '<div class="col-6 col-sm-3">' .
+'<div class = "post-thumbnail">' . 
+'<img class = "img-fluid" src ="'.get_the_post_thumbnail().'</div>' . 
+'<div class="latest-post-category">'. $category[0]->name  .'</div>'.
 '<div class="latest-post-title">
 <a href="'.get_permalink().'">'.get_the_title().'</a></div></div>';
 $count++;                           
@@ -130,7 +133,7 @@ foreach ($rows as $row) { echo $row . '</div>'; }
 
 
 
-
+    <!-- . the_post_thumbnail("full", array("class" => "img-fluid")) . -->
 
 
 

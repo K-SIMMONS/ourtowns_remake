@@ -127,6 +127,11 @@ a:link{
    
 /* latest page */
  
+.post-thumbnail {
+    max-width: 100% !important;
+    height:  !
+  }
+
 .latest-post-category{
     color: red;
     text-transform: uppercase;
@@ -147,7 +152,7 @@ a:link{
     text-transform: uppercase;
     font-family: "Lato", sans-serif;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .latest-post-title :visited{
