@@ -20,7 +20,7 @@
     <div class = "col-sm-6 col-md-3">
 		<a class = "latest-block" href = "<?php the_permalink(); ?>">
         <?php the_post_thumbnail('full' , array('class' => 'img-fluid'));?>
-        <p class = "latest-post-category"><?php echo $category[0]->name ?></p>
+        <p class = "latest-post-category mt-2"><?php echo $category[0]->name ?></p>
         <h1 class = "latest-post-title"><?php the_title();?></h1>
 		</a>
     </div>

@@ -136,8 +136,8 @@ a:link{
     color: red;
     text-transform: uppercase;
     font-family: "Lato", sans-serif;
-    font-weight: bold;
-    font-size: 14px;
+    font-weight: bolder;
+    font-size: 12px;
 }
 
 .latest-post-category :link{
@@ -176,6 +176,11 @@ a:link{
     color:#394955;
 }
 
+.all_reports{
+    font-weight: bold;
+    font-family: "Lato", sans-serif;
+    
+}
 /* homepage styles */
 
 .divider_title{
@@ -200,24 +205,21 @@ a:link{
 }
 
 .yellow_divider{
-    max-width: 1392px;
+    max-width: 100%;
     margin: 100px 0px;
     width: 100%;
     border-bottom: 3px solid #FFDE40;
-    position: relative;
-}
-
-
-/* latest page styles */
-
-.all_reports{
-    font-weight: bold;
-    font-family: "Lato", sans-serif;
     
 }
 
-.page-numbers {
+
+/* Front-page page styles */
+.front-page-big-latest{
    
+}
+
+.front-page-small-latest{
+    
 }
 
 /* ABout Us Page */
