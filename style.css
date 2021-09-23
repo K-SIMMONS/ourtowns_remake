@@ -127,6 +127,10 @@ a:link{
    
 /* latest page */
  
+.latest-block :link{
+    color: #000;
+}
+
 
 .latest-post-category{
     color: red;
@@ -149,6 +153,19 @@ a:link{
     font-family: "Lato", sans-serif;
     font-weight: bold;
     font-size: 20px;
+    color:#394955;
+}
+
+.latest-block :hover{
+    text-decoration: underline;
+    text-decoration-color: #000;
+    color:#394955;
+}
+
+.latest-block :link{
+    text-decoration: underline;
+    text-decoration-color: #000;
+    color:#394955;
 }
 
 .latest-post-title :visited{
