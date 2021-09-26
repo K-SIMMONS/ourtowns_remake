@@ -271,7 +271,7 @@ if ( ! function_exists( 'tf_get_related_posts' ) ) {
 								<div class="size-thumbnail">'; 
 								echo the_post_thumbnail('full', array ('class' => 'size-thumbnail')) . '</div>
 									<div>
-										<p class="sidebar-category-text mb-0">' . $category[0]->cat_name . '</p>
+										<p class="sidebar-category-text mb-0">' . $category[0]->name . '</p>
 										<p class="related-list-item mb-0">' . get_the_title() . '</p>
 									</div>
 								</div>
