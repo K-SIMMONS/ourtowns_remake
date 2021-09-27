@@ -222,6 +222,25 @@ a:link{
     
 }
 
+.latest-post-excerpt{
+    color:#394955;
+}
+
+.latest-post-excerpt :link{
+    color:#394955;
+}
+
+.latest-post-excerpt :visited{
+    color:#394955;
+}
+
+.latest-post-excerpt :hover{
+    color:#394955;
+}
+
+
+
+
 /* ABout Us Page */
 
 
