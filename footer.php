@@ -11,7 +11,7 @@
 ?>
 
 <section id="stay_connected">
-    <div class="container-fluid footer_banner p-2">
+    <div class="container-fluid footer_banner p-2 ">
       <div class="row">
         <div class="col-7 mt-4 text-center ">
           <h1 class="connected_title">Stay connected</h1>
