@@ -1,51 +1,85 @@
-<?php
-/**
- * The template for displaying archive pages
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
- * @package nokap_ourtown_remake
- */
+<?php get_header(); ?>
 
-get_header();
-?>
+<div class="container-fluid">
+       <div class="row">
+           <div class="col-3 text-center ms-3">
+               <h1 class="all_reports"><?php echo get_cat_name();?>
+			   </h1>
+            </div>
+        </div>
+    </div>
 
-	<main id="primary" class="site-main">
+    
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col col-md-3 text-center"><h1>CONTENT</h1><p>place content here</p></div>
+            <div class="col col-md-3 text-center"><h1>CONTENT</h1><p>place content here</p></div>
+            <div class="col col-md-3 text-center"><h1>CONTENT</h1><p>place content here</p></div>
+            <div class="col col-md-3 text-center"><h1>CONTENT</h1><p>place content here</p></div>
+        </div>
+    </div>
 
-		<?php if ( have_posts() ) : ?>
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col col-md-3 text-center"><h1>CONTENT</h1><p>place content here</p></div>
+            <div class="col col-md-3 text-center"><h1>CONTENT</h1><p>place content here</p></div>
+            <div class="col col-md-3 text-center"><h1>CONTENT</h1><p>place content here</p></div>
+            <div class="col col-md-3 text-center"><h1>CONTENT</h1><p>place content here</p></div>
+        </div>
+    </div>
 
-			<header class="page-header">
-				<?php
-				the_archive_title( '<h1 class="page-title">', '</h1>' );
-				the_archive_description( '<div class="archive-description">', '</div>' );
-				?>
-			</header><!-- .page-header -->
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col col-md-3 text-center"><h1>CONTENT</h1><p>place content here</p></div>
+            <div class="col col-md-3 text-center"><h1>CONTENT</h1><p>place content here</p></div>
+            <div class="col col-md-3 text-center"><h1>CONTENT</h1><p>place content here</p></div>
+            <div class="col col-md-3 text-center"><h1>CONTENT</h1><p>place content here</p></div>
+        </div>
+    </div>
 
-			<?php
-			/* Start the Loop */
-			while ( have_posts() ) :
-				the_post();
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col col-md-3 text-center"><h1>CONTENT</h1><p>place content here</p></div>
+            <div class="col col-md-3 text-center"><h1>CONTENT</h1><p>place content here</p></div>
+            <div class="col col-md-3 text-center"><h1>CONTENT</h1><p>place content here</p></div>
+            <div class="col col-md-3 text-center"><h1>CONTENT</h1><p>place content here</p></div>
+        </div>
+    </div>
 
-				/*
-				 * Include the Post-Type-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', get_post_type() );
+    <div class="container-fluid mt-5 ">
+        <div class="row text-end page-numbers">
+            <div class="col-12 page_numbers ">
+                <button class="btn btn-outline-danger active">1</button>
+                <button class="btn btn-outline-danger ">2</button>
+                <button class="btn btn-outline-danger disabled">...</button>
+                <button class="btn btn-outline-danger ">32</button>
+                <button class="btn btn-outline-danger ">33</button>
+                <button class="btn btn-outline-danger active current">></button>
 
-			endwhile;
+            </div>
+            
+            
+        </div>
+    </div>
 
-			the_posts_navigation();
 
-		else :
 
-			get_template_part( 'template-parts/content', 'none' );
 
-		endif;
-		?>
 
-	</main><!-- #main -->
 
-<?php
-get_sidebar();
-get_footer();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<?php get_footer();?>

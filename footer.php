@@ -11,6 +11,8 @@
 
 ?>
 
+
+
 <footer>
 
         <div class="stay-connected">

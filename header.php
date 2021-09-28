@@ -16,10 +16,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&amp;family=PT+Serif&amp;display=swap" rel="stylesheet">
+
     
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
 
     <?php wp_head(); ?>
     <title>OurTowns Home</title>
@@ -28,23 +30,35 @@
 <body>
     <header>
 
-      <div class="container-fluid top_banner">
+      <div class="container-fluid top_banner ">
+        <div class = "site_branding">
         <a class="navbar-brand" href="<?php echo site_url();?>">
               <img class="img-fluid ms-4" src="<?php echo get_theme_file_uri('/images/logo.png'); ?> " alt="logo">
           </a>
-          <div class="top_search">
+        </div>
+        <div class = "desktop_search">
+          <div class="desktop_search-form">
           <form role="search" action="https://www.ourtownsfoundation.org/" method="get" class="search-form">
             <label for="s">
-              <span class="input-group-append screen-reader-text"></span>
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <span class="screen-reader-text"></span>
+              <input type="search" name = "s" placeholder="Search" class="search-form hidden" value>
             </label>
-              <button type="submit" class="search-form-sumbit">
-                <img class="" src="/images/search_icon.png" alt="search icon">
+              <button type="submit" class="search-form__submit">
+              <img id = "searchIcon" class = "" src="https://www.ourtownsfoundation.org/wp-content/themes/our-towns/images/search-black.png" alt="Search Submit Icon">
                 </button>
               </form>
               </div>
-              <button class="btn text-light donate_btn" type="submit">DONATE</button>
-               </div> 
-           
-      
+              <button class = "desktop-search__open-search">
+                <img src= "https://www.ourtownsfoundation.org/wp-content/themes/our-towns/images/search-white.png" alt = "magnifying glass">
+            </button>
+            <a href="https://www.ourtownsfoundation.org/donations" class="nav-donation-btn nomobile">DONATE</a>
+            </div>   
+          </div> 
+           <?php wp_nav_menu( array(
+             'theme_location' => 'menu-1'
+             
+           )
+          );
+      ?>
     </header>
+

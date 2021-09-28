@@ -179,7 +179,8 @@ function nokap_ourtown_remake_scripts() {
 
     wp_enqueue_style('main_stylesheet', get_theme_file_uri('/style.css'));
     wp_enqueue_script('bootstrap_javascript' , get_theme_file_uri('/js/bootstrap.min.js'));
-	
+	wp_enqueue_script('ourtown_javascript' , get_theme_file_uri('/js/ourtowns.js'));
+
 	// wp_enqueue_style( 'nokap-ourtown-remake-style', get_stylesheet_uri(), array(), _S_VERSION );
 	// wp_style_add_data( 'nokap-ourtown-remake-style', 'rtl', 'replace' );
 
@@ -217,6 +218,8 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
+
+
 
 
 
@@ -273,7 +276,9 @@ if ( ! function_exists( 'tf_get_related_posts' ) ) {
 								<div class="size-thumbnail">'; 
 								echo the_post_thumbnail('full', array ('class' => 'size-thumbnail')) . '</div>
 									<div>
+
 										<p class="sidebar-category-text mb-0">' . $category[0]->name . '</p>
+
 
 										<p class="related-list-item mb-0">' . get_the_title() . '</p>
 									</div>
