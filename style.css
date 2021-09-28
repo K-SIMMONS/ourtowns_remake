@@ -6,6 +6,25 @@
 
 a {
     text-decoration: none;
+
+}
+
+
+body {
+    font-family: "PT Serif", serif;
+}
+
+p {
+    margin-bottom: 1.5em;
+    font-family: "PT Serif", serif;
+    font-size: 20px;
+    line-height: 175%;
+}
+
+/* Commenting these out due to global issues  */
+
+/* a:visited{
+    color: darkgray;
 }
 
 
@@ -15,6 +34,7 @@ a {
    margin-top: 30px;
    font-size: 30px; 
 }
+
 
 .search{
     position: absolute;
@@ -27,6 +47,7 @@ a {
     border-radius: 4px;
     transition: width 0.5s;
 }
+
 
 .trial_class{
     font-size: 4vw !important;
@@ -206,6 +227,7 @@ a {
     color:#394955;
 }
 
+
 .latest-post-excerpt :visited{
     color:#394955;
 }
@@ -213,6 +235,7 @@ a {
 .latest-post-excerpt :hover{
     color:#394955;
 }
+
 
 .front-page-carousel-text{
     text-transform: uppercase;
@@ -303,51 +326,9 @@ a {
     padding-left: 200px;
 }
 
-
-
-/* footer styles */
-
-.connected_title{
-    font-weight: bold;
-    color: white;
-    font-family: "Lato", sans-serif;
-    text-transform: uppercase;
-    display: inline-block;
-}
-
-.footer_banner{
-    background-color: #EF413D;
-    margin-top: 120px;
-}
- .footer_banner_p{
-     display: inline-block;
-     font-size:20px; 
- }
-
- .signup-btn{
-     color: white;
-     font-family: "Lato", sans-serif;
-     text-transform: uppercase;
-     display: inline-block;
-     border-color: white;
- }
-
- .email_form{
-     display: inline-block;
- }
- .footer_end_banner{
-     background-color: black;
- }
-
-
- .footer_margin{
-     margin-left: 140px;
- }
-
-
-
-
-  /* Stephen Single Page  */
+  /* Stephen Styling */
+  
+  /* Single Page  */
 
   .site-main {
     max-width: 1400px;
@@ -363,6 +344,7 @@ a {
   }
 
   .single-page-title {
+      text-transform: uppercase;
       font-family: "Lato", sans-serif;
       font-size: 48px;
       font-style: normal;
@@ -376,8 +358,6 @@ a {
       margin-right: 90%;
       opacity: 100%;
   }
-
-/* Need to ask team if 'a' tags above can be specific  */
 
   .single-category-text {
     font-family: "Lato", sans-serif;
@@ -469,6 +449,9 @@ a {
 }
 
 .sidebar-category-text {
+
+    font-family: "Lato", sans-serif;
+
     font-size: 12px;
     text-transform: uppercase;
     color: #EF413D !important;
@@ -575,52 +558,371 @@ hr {
     width: fit-content;
 }
 
- /* nav media querey */
+/* Stephen's Footer Style */
 
- @media (max-width: 850px){
-    .desktop-search .search-form input[type=search] {
-        width: 238px;
+/* Top footer section  */
+
+.stay-connected {
+    height: 104px;
+    padding: 0 11.5%;
+    background-color: #EF413D;
+}
+
+.stay-connected-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1400px;
+    height: 100%;
+    width: 100%;
+}
+
+.sc-text-container {
+    display: flex;
+    align-items: center;
+}
+
+.sc-h3 {
+    font-size: 36px;
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+}
+
+.sc-p {
+    margin-top: 0;
+    font-size: 20px;
+    margin-left: 18px;
+    margin-bottom: 5px;
+    color:white;
+    font-family: "Lato", sans-serif;
+}
+
+.sc-signup {
+    display: flex;
+    align-items: center;
+}
+
+.sc-signup-container {
+	display: flex;
+	width: 450px;
+	justify-content: space-between;
+}
+
+#email {
+	width: 311px;
+	background-color: white;
+	border: 1px solid white;
+	border-radius: 0px;
+	font-family: "Lato", sans-serif;
+	color: #8DA8BA;
+	padding-left: 16px;
+	margin-right: 6px;
+}
+
+#button {
+	width: 145px;
+	color: white;
+	background-color: transparent;
+	border: 2px solid white;
+	border-radius: 0px;
+	font-family: "Lato", sans-serif;
+	padding: 14px;
+}
+
+/* Middle footer section */
+
+body {
+    margin: 0;
+}
+
+.footer-content {
+    background-color: black;
+    padding: 50px 11.5%;
+}
+
+.footer-content-display {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1400px;
+    height: 100%;
+    width: 100%;
+}
+
+.footer-font {
+    width: 556px;
+    font-family: "PT Serif", serif;
+    color: #E3E9EE;
+    font-size: 14px;
+    margin-bottom: 0;
+    line-height: 175%;
+}
+
+/* Bottom footer section  */
+
+.footer-bottom {
+    background-color: #1C252A;
+    padding: 0 11.5%;
+    height: 80px;
+}
+
+.footer-bottom-content-display {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1400px;
+    height: 100%;
+    width: 100%;
+}
+
+.bottom-footer-text-container {
+    display: flex;
+}
+
+.bottom-footer-font {
+    color: white;
+    font-size: 14px;
+	margin: none;	
+}
+
+.span {
+    margin-left: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.privacy-policy {
+    color: #7192A9;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.privacy-policy:hover {
+    color: white;
+}
+
+.contact-border input {
+	border: 1px solid #00ABDF !important;
+	height: 60px !important;
+	
+}
+
+
+/* Press Page  */
+
+.news-post {
+    padding: 50px 0;
+    border-bottom: 1px solid #00ABDF;
+}
+
+.news-post-link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.news-post-link:hover {
+    border: 1px solid #00ABDF;
+}
+
+.news-featured-img {
+    max-width: 350px;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.press-post-title {
+    font-family: "Lato", sans-serif;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 34px;
+    letter-spacing: 0.05em;
+}
+
+.pagination {
+    margin: 3rem 0 5rem;
+    justify-content: flex-end;
+}
+
+.page-numbers {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: center;
+    height: 32px;
+    width: 32px;
+    border: 1px solid #EF413D;
+    color: #EF413D;
+    margin-right: 8px;
+    border-radius: 4px;
+}
+
+.page-numbers:hover {
+    text-decoration: underline;
+}
+
+.current {
+    background-color: #EF413D;
+    color: #ffffff;
+}
+
+/* Media Queries  */
+
+    /* Min Width */
+
+@media screen and (min-width: 768px) {
+    .single-post-col-left {
+      max-width: 850px !important;
+      margin-right: 10px;
     }
-   }
-    @media (max-width: 1010px) {
-    .desktop-search .search-form input[type=search], .desktop-search .search-form__submit {
-        height: 40px;
+    .single-post-col-right {
+      max-width: 420px !important;
+      margin-left: 10px;
     }
-   }
-   
-   @media (max-width: 770px){
-       .nomobile {
-           display: none;
-       }
-   }
-   
-   @media screen and (max-width: 1200px){
-       .divider_title {
-       font-size: 30px;
-       width: 180px;
-       margin-top: -20px !important;
-       margin-left: 30px !important;
-       }
-   }
-   
-   @media screen and (min-width: 768px) {
-       .single-post-col-left {
-         max-width: 850px !important;
-         margin-right: 10px;
-       }
-       .single-post-col-right {
-         max-width: 420px !important;
-         margin-left: 10px;
-       }
-     }
-     @media screen and (min-width: 768px) {
-       .single-post-col-left {
-         max-width: 850px !important;
-         margin-right: 10px;
-       }
-       .single-post-col-right {
-         max-width: 420px !important;
-         margin-left: 10px;
-       }
-     }
-   
+  }
+
+  /* Max Width  */
+
+  @media screen and (max-width: 992px) {
+
+	.sc-signup-container {
+		flex-direction: column;
+		width: 310px;
+        align-items: center;
+	}
+
+	#email {
+		width: 100%;
+		margin-right: 0px;
+		height: 50px;
+		margin-bottom: 17px;
+	}
+
+	#button {
+		width: 100%;
+		height: 50px;
+	}
+
+    .stay-connected {
+        height: 276px;
+    }
+
+    .stay-connected-content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sc-text-container {
+        flex-direction: column;
+    }
+    
+    .footer-content {
+        display: none;
+    }
+
+    .footer-content-display {
+        display: none;
+    }
+
+    .footer-bottom {
+        height: 329px;
+        padding-top: 37px;
+    }
+
+    .footer-bottom-content-display {
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+    }
+
+    .bottom-footer-text-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 37px;
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .divider_title {
+    font-size: 30px;
+    width: 180px;
+    margin-top: -20px !important;
+    margin-left: 30px !important;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .footer-font {
+        width: 400px;
+    }
+
+    .bottom-footer-font {
+        font-size: 14px;
+    }
+
+	.sc-signup-container {
+		width: 370px;
+	}
+
+	#email {
+		width: 250px;
+		margin-right: 0px;
+	}
+
+	#button {
+		width: 110px;
+	}
+
+}
+
+/* Old CSS */
+
+/* footer styles */
+
+/* .connected_title{
+    font-weight: bold;
+    color: white;
+    font-family: "Lato", sans-serif;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.footer_banner{
+    background-color: #EF413D;
+    margin-top: 120px;
+}
+ .footer_banner_p{
+     display: inline-block;
+     font-size:20px; 
+ }
+
+ .signup-btn{
+     color: white;
+     font-family: "Lato", sans-serif;
+     text-transform: uppercase;
+     display: inline-block;
+     border-color: white;
+ }
+
+ .email_form{
+     display: inline-block;
+ }
+ .footer_end_banner{
+     background-color: black;
+ }
+
+
+ .footer_margin{
+     margin-left: 140px;
+
+
+ } */
+

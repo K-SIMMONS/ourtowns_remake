@@ -19,7 +19,9 @@ if( have_posts() ):
 		
 		<main class ="container-fluid main">
 			<article>
-				<header class="mb-4">
+
+				<header class="mb-4 mt-4">
+
 				
 				<?php 
 		
@@ -91,6 +93,11 @@ if( have_posts() ):
 		<?php    
 	endwhile;
 endif;
+
+
+
+wp_reset_postdata();
+
 
 get_footer();
 ?>

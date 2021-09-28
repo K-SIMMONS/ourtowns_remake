@@ -10,7 +10,8 @@
 
 
 
-this is page-connect.php
+<?php echo do_shortcode('[wpforms id="299"]');?>
+
 
 
 
