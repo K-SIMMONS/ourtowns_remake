@@ -8,6 +8,18 @@ a {
     text-decoration: none;
 }
 
+
+body {
+    font-family: "PT Serif", serif;
+}
+
+p {
+    margin-bottom: 1.5em;
+    font-family: "PT Serif", serif;
+    font-size: 20px;
+    line-height: 175%;
+}
+
 /* Commenting these out due to global issues  */
 
 /* a:visited{
@@ -80,6 +92,85 @@ a:link{
     
 }
 
+
+/* ABout Us Page */
+
+
+
+.main {
+    max-width: 1400px;
+    margin: auto;
+    margin-top: 60px;
+    display: block;
+    
+}
+
+.bruhp {
+    margin-bottom: 1.5em;
+    font-family: "PT Serif", serif;
+    font-size: 20px;
+    line-height: 175%;
+    margin-top: 0;
+}
+
+
+.page-title {
+    font-family: "Lato", sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 48px;
+}
+
+#bruh {
+    margin-left: 80px;
+}
+.dash {
+    padding-left: 250px;
+}
+
+.dash2 {
+    padding-left: 170px;
+}
+
+.dash:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+  }
+
+  .hh2 {
+    clear: both;
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-size: 2rem;
+    line-height: 1.2;
+}
+  .wp-block-button__link {
+      margin-left: 140px;
+      margin-top: 30px;
+      display: flex;
+      justify-content: baseline;
+      
+  }
+
+  .name-hr {
+    height: 3.83125px;
+    margin-top: 1rem;
+    margin-bottom: 20px;
+    margin-left: 0;
+    width: 3rem;
+}
+
+.dash3 {
+    padding-left: 200px;
+}
 
   /* Stephen Styling */
   
@@ -204,6 +295,9 @@ a:link{
 }
 
 .sidebar-category-text {
+
+    font-family: "Lato", sans-serif;
+
     font-size: 12px;
     text-transform: uppercase;
     color: #EF413D !important;
@@ -461,9 +555,72 @@ body {
 	
 }
 
+
+/* Press Page  */
+
+.news-post {
+    padding: 50px 0;
+    border-bottom: 1px solid #00ABDF;
+}
+
+.news-post-link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.news-post-link:hover {
+    border: 1px solid #00ABDF;
+}
+
+.news-featured-img {
+    max-width: 350px;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.press-post-title {
+    font-family: "Lato", sans-serif;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 34px;
+    letter-spacing: 0.05em;
+}
+
+.pagination {
+    margin: 3rem 0 5rem;
+    justify-content: flex-end;
+}
+
+.page-numbers {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: center;
+    height: 32px;
+    width: 32px;
+    border: 1px solid #EF413D;
+    color: #EF413D;
+    margin-right: 8px;
+    border-radius: 4px;
+}
+
+.page-numbers:hover {
+    text-decoration: underline;
+}
+
+.current {
+    background-color: #EF413D;
+    color: #ffffff;
+}
+
 /* Media Queries  */
 
-/* Min Width */
+    /* Min Width */
 
 @media screen and (min-width: 768px) {
     .single-post-col-left {
@@ -610,54 +767,5 @@ body {
 
  .footer_margin{
      margin-left: 140px;
- }
 
-@media screen and (max-width: 1200px){
-    .divider_title {
-    font-size: 30px;
-    width: 180px;
-    margin-top: -20px !important;
-    margin-left: 30px !important;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .single-post-col-left {
-      max-width: 850px !important;
-      margin-right: 10px;
-    }
-    .single-post-col-right {
-      max-width: 420px !important;
-      margin-left: 10px;
-    }
-  }
-  @media screen and (min-width: 768px) {
-    .single-post-col-left {
-      max-width: 850px !important;
-      margin-right: 10px;
-    }
-    .single-post-col-right {
-      max-width: 420px !important;
-      margin-left: 10px;
-    }
-  }
-
-
-  /* About page buttons */
-
-
-  .rectangleButton a {
-    border-radius: 0;
-    font-family: "lato", sans-serif;
-    font-weight: bold;
-    
-    }
-    .rectangleButton:hover {
-        
-        background-color: red;
-        text-decoration: none;
-    }
-    .rectangleButton a:hover{
-        text-decoration: none;
-        color:white;
-    }
+ } */

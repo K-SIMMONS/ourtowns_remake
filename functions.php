@@ -174,7 +174,9 @@ add_action( 'widgets_init', 'nokap_ourtown_remake_widgets_init' );
  * Enqueue scripts and styles.
  */
 function nokap_ourtown_remake_scripts() {
-	wp_enqueue_style('bootstrap_stylesheet',  get_theme_file_uri('/css/bootstrap.min.css'));
+
+	wp_enqueue_style('bootstrap_stylesheet', get_theme_file_uri('/css/bootstrap.min.css'));
+
     wp_enqueue_style('main_stylesheet', get_theme_file_uri('/style.css'));
     wp_enqueue_script('bootstrap_javascript' , get_theme_file_uri('/js/bootstrap.min.js'));
 	
@@ -271,7 +273,8 @@ if ( ! function_exists( 'tf_get_related_posts' ) ) {
 								<div class="size-thumbnail">'; 
 								echo the_post_thumbnail('full', array ('class' => 'size-thumbnail')) . '</div>
 									<div>
-										<p class="sidebar-category-text mb-0">' . $category[0]->cat_name . '</p>
+										<p class="sidebar-category-text mb-0">' . $category[0]->name . '</p>
+
 										<p class="related-list-item mb-0">' . get_the_title() . '</p>
 									</div>
 								</div>
