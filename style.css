@@ -8,6 +8,7 @@ a {
     text-decoration: none;
 }
 
+
 body {
     font-family: "PT Serif", serif;
 }
@@ -90,6 +91,7 @@ a:link{
     font-family: "Lato", sans-serif;
     
 }
+
 
 /* ABout Us Page */
 
@@ -293,7 +295,9 @@ a:link{
 }
 
 .sidebar-category-text {
+
     font-family: "Lato", sans-serif;
+
     font-size: 12px;
     text-transform: uppercase;
     color: #EF413D !important;
@@ -551,6 +555,7 @@ body {
 	
 }
 
+
 /* Press Page  */
 
 .news-post {
@@ -762,4 +767,5 @@ body {
 
  .footer_margin{
      margin-left: 140px;
+
  } */
