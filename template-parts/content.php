@@ -9,55 +9,29 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php
-		if ( is_singular() ) :
-			the_title( '<h1 class="entry-title">', '</h1>' );
-		else :
-			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-		endif;
 
-		if ( 'post' === get_post_type() ) :
+<article id="post-<?php the_ID(); ?>" <?php post_class('col-5 ms-3 gy-2  post-shadows'); ?>>
+	<a href="<? the_permalink();?>">
+	
+		<?php the_post_thumbnail('full' , array('class' => 'img-fluid'));
+			if (is_singular()) : ?>
+		      <p class = "latest-post-category mt-2"><?php echo $category[0]->name ?></p>
+
+			<?php	the_title( '<h1 class=" latest-post-title">', '</h1>' );
+			else :
+				?> <h1><? the_title();?></h1><?
+			endif;?>
+		<div class="latest-post-excerpt">
+			<?
+			if(has_excerpt())
+			{
+				echo get_the_excerpt();
+			}
+			else
+			{
+				echo wp_trim_words(get_the_content(), 18);
+			}
 			?>
-			<div class="entry-meta">
-				<?php
-				nokap_ourtown_remake_posted_on();
-				nokap_ourtown_remake_posted_by();
-				?>
-			</div><!-- .entry-meta -->
-		<?php endif; ?>
-	</header><!-- .entry-header -->
-
-	<?php nokap_ourtown_remake_post_thumbnail(); ?>
-
-	<div class="entry-content">
-		<?php
-		the_content(
-			sprintf(
-				wp_kses(
-					/* translators: %s: Name of current post. Only visible to screen readers */
-					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'nokap-ourtown-remake' ),
-					array(
-						'span' => array(
-							'class' => array(),
-						),
-					)
-				),
-				wp_kses_post( get_the_title() )
-			)
-		);
-
-		wp_link_pages(
-			array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'nokap-ourtown-remake' ),
-				'after'  => '</div>',
-			)
-		);
-		?>
-	</div><!-- .entry-content -->
-
-	<footer class="entry-footer">
-		<?php nokap_ourtown_remake_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
+		</div> 
+	</a>
 </article><!-- #post-<?php the_ID(); ?> -->

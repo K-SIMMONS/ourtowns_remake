@@ -9,9 +9,9 @@
 
 
 
-
-<?php echo do_shortcode('[wpforms id="299"]');?>
-
+<div class = "container">
+<?php the_content();?>
+</div>
 
 
 

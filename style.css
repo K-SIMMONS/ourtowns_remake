@@ -218,6 +218,15 @@ p {
     
 }
 
+.yellow_divider_previous{
+    max-width: 100%;
+    margin: 100px 0px;
+    width: 100%;
+    border-bottom: 3px solid #FFDE40;
+    
+}
+
+
 
 .latest-post-excerpt{
     color:#394955;
@@ -245,7 +254,32 @@ p {
     color:#394955;
 }
 
+.carousel-container{
+    border: 3px solid #FFDE40; 
+    margin-top: 130px; 
+}
 
+.voices-container{
+    background-color: #fff;
+    width: 328px;
+    margin-top: -45px;
+    
+}
+
+.col-padding{
+     padding: 20px 20px 20px;
+}
+
+
+.post-shadows{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 0px 0px 30px;
+}
+
+.single-big-col-excerpt{
+    font-size: 28px;
+    padding: 0px 20px 120px;
+}
 
 /* ABout Us Page */
 
@@ -566,6 +600,7 @@ hr {
     height: 104px;
     padding: 0 11.5%;
     background-color: #EF413D;
+    margin-top: 180px;
 }
 
 .stay-connected-content {
