@@ -137,6 +137,14 @@ p {
     color: #000;
 }
 
+.latest-post-category-big{
+    color: red;
+    text-transform: uppercase;
+    font-family: "Lato", sans-serif;
+    font-weight: bolder;
+    font-size: 18px;
+    
+}
 
 .latest-post-category{
     color: red;
@@ -189,6 +197,25 @@ p {
 }
 /* front page styles */
 
+
+.right-arrow{
+    background-image: url('https://www.ourtownsfoundation.org/wp-content/themes/our-towns/images/right-arrow.png');
+    /* width: 45%; */
+    /* background-position: left; */
+    /* background-size: contain; */
+    background-repeat: no-repeat;
+}
+
+.left-arrow{
+    background-image: url(https://www.ourtownsfoundation.org/wp-content/themes/our-towns/images/left-arrow.png);
+    /* width: 10%;
+    background-position: left;
+    background-size: contain; */
+    background-repeat: no-repeat;
+}
+
+
+
 .divider_title{
     font-size: 48px;
     width: 300px;
@@ -226,10 +253,13 @@ p {
     
 }
 
-
+.second-divider-container{
+    margin-top: 125px;
+}
 
 .latest-post-excerpt{
     color:#394955;
+    font-size: 1vw;
 }
 
 .latest-post-excerpt :link{
@@ -277,7 +307,7 @@ p {
 }
 
 .single-big-col-excerpt{
-    font-size: 28px;
+    font-size: 1.3vw;
     padding: 0px 20px 120px;
 }
 
@@ -916,6 +946,12 @@ body {
 		width: 110px;
 	}
 
+}
+
+@media screen and (max-width:750px ){
+    .noMobile{
+        display: none;
+    }
 }
 
 /* Old CSS */

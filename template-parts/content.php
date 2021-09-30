@@ -7,21 +7,22 @@
  * @package nokap_ourtown_remake
  */
 
+
+$category = get_the_category(); 
 ?>
-
-
 <article id="post-<?php the_ID(); ?>" <?php post_class('col-5 ms-3 gy-2  post-shadows'); ?>>
 	<a href="<? the_permalink();?>">
 	
 		<?php the_post_thumbnail('full' , array('class' => 'img-fluid'));
-			if (is_singular()) : ?>
-		      <p class = "latest-post-category mt-2"><?php echo $category[0]->name ?></p>
+		?> <p class = "latest-post-category ms-2 mt-2"><?php echo $category[0]->name ?></p>
+		<?php	if (is_singular()) : 
+					the_title( '<h1 class=" ms-2 latest-post-title">', '</h1>' );
+		    
 
-			<?php	the_title( '<h1 class=" latest-post-title">', '</h1>' );
 			else :
-				?> <h1><? the_title();?></h1><?
+					?> <h1><? the_title();?></h1><?
 			endif;?>
-		<div class="latest-post-excerpt">
+		<div class="ms-2 latest-post-excerpt">
 			<?
 			if(has_excerpt())
 			{

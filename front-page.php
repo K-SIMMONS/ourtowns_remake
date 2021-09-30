@@ -51,6 +51,7 @@
 				<?
 					while($posts->have_posts())
 					{
+            $category = get_the_category(); 
 						if($postNumber>4)
 						{
 							break;
@@ -74,12 +75,18 @@
 
 
     <section class="divider">
-      <div class="container mt-5 ">
-          <div class="row yellow_divider_previous">
-              <div class="col ms-5">
+      <div class="container second-divider-container ">
+          <div class="row ">    
+            <div class = "col-2 ">
+              <img class = "img-fluid left-arrow mt-3 noMobile " src = "https://www.ourtownsfoundation.org/wp-content/themes/our-towns/images/left-arrow.png">
+            </div>
+            <div class = "col-4">
                   <h1 class="divider_title_previous"><a href="<?php the_permalink(6);?>">Previous Reports</a></h1>
-                  <p><a href="<?php the_permalink(6);?>">Read past content from the website here.</a></p>
-              </div>
+                  <p><a class = "latest-post-excerpt" href="<?php the_permalink(6);?>">Read past content from the website here.</a></p>
+            </div>
+            <div class = "col-6">
+              <img class = "img-fluid right-arrow mt-3" src = "https://www.ourtownsfoundation.org/wp-content/themes/our-towns/images/right-arrow.png">
+            </div>
           </div>
       </div>    
     </section>
