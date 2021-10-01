@@ -167,6 +167,18 @@ function nokap_ourtown_remake_widgets_init() {
 			'after_title'   => '</h2>',
 		)
 	);
+
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Searchbar Sidebar', 'nokap-ourtown-remake' ),
+			'id'            => 'sidebar-searchbar',
+			'description'   => esc_html__( 'Add widgets here.', 'nokap-ourtown-remake' ),
+			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h2 class="widget-title">',
+			'after_title'   => '</h2>',
+		)
+	);
 }
 add_action( 'widgets_init', 'nokap_ourtown_remake_widgets_init' );
 
@@ -178,8 +190,9 @@ function nokap_ourtown_remake_scripts() {
 	wp_enqueue_style('bootstrap_stylesheet', get_theme_file_uri('/css/bootstrap.min.css'));
 
     wp_enqueue_style('main_stylesheet', get_theme_file_uri('/style.css'));
-    wp_enqueue_script('bootstrap_javascript' , get_theme_file_uri('/js/bootstrap.min.js'));
-	wp_enqueue_script('ourtown_javascript' , get_theme_file_uri('/js/ourtowns.js'));
+	
+    wp_enqueue_script('bootstrap_javascript' , get_theme_file_uri() . '/js/bootstrap.min.js', array(), '1.0', true);
+	wp_enqueue_script('ourtown_javascript' , get_theme_file_uri() . '/js/ourtowns.js', array(), '1.0', true);
 
 	// wp_enqueue_style( 'nokap-ourtown-remake-style', get_stylesheet_uri(), array(), _S_VERSION );
 	// wp_style_add_data( 'nokap-ourtown-remake-style', 'rtl', 'replace' );

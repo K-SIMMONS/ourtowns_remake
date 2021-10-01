@@ -1,0 +1,48 @@
+    .box {
+        height: 70px;
+        width: 300px;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hotdogs {
+        opacity: 0;
+        transition-property: opacity;
+        transition-duration: .75s;
+    }
+
+    .icon {
+        position: relative;
+        padding: 2px;
+        left: 210px;
+        opacity: 0;
+    }
+
+    .color {
+        color: white;
+    }
+
+    .searchbutton {
+        background: transparent;
+        border: none;
+    }
+
+    .searchbar {
+        width: 90%;
+        height: 60%;
+        font-size: 16px;
+        padding: 5px 0;
+        margin-right: 15px;
+    }
+
+    .searchbar[type="search"] {
+        padding-left: 10px;
+    }
+
+    .display {
+        opacity: 1;
+        transition-property: opacity;
+        transition-duration:.75s;
+    }
