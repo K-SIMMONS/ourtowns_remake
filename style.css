@@ -137,6 +137,14 @@ p {
     color: #000;
 }
 
+.latest-post-category-big{
+    color: red;
+    text-transform: uppercase;
+    font-family: "Lato", sans-serif;
+    font-weight: bolder;
+    font-size: 18px;
+    
+}
 
 .latest-post-category{
     color: red;
@@ -189,6 +197,25 @@ p {
 }
 /* front page styles */
 
+
+.right-arrow{
+    background-image: url('https://www.ourtownsfoundation.org/wp-content/themes/our-towns/images/right-arrow.png');
+    /* width: 45%; */
+    /* background-position: left; */
+    /* background-size: contain; */
+    background-repeat: no-repeat;
+}
+
+.left-arrow{
+    background-image: url(https://www.ourtownsfoundation.org/wp-content/themes/our-towns/images/left-arrow.png);
+    /* width: 10%;
+    background-position: left;
+    background-size: contain; */
+    background-repeat: no-repeat;
+}
+
+
+
 .divider_title{
     font-size: 48px;
     width: 300px;
@@ -218,9 +245,21 @@ p {
     
 }
 
+.yellow_divider_previous{
+    max-width: 100%;
+    margin: 100px 0px;
+    width: 100%;
+    border-bottom: 3px solid #FFDE40;
+    
+}
+
+.second-divider-container{
+    margin-top: 125px;
+}
 
 .latest-post-excerpt{
     color:#394955;
+    font-size: 1vw;
 }
 
 .latest-post-excerpt :link{
@@ -245,7 +284,32 @@ p {
     color:#394955;
 }
 
+.carousel-container{
+    border: 3px solid #FFDE40; 
+    margin-top: 130px; 
+}
 
+.voices-container{
+    background-color: #fff;
+    width: 328px;
+    margin-top: -45px;
+    
+}
+
+.col-padding{
+     padding: 20px 20px 20px;
+}
+
+
+.post-shadows{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 0px 0px 30px;
+}
+
+.single-big-col-excerpt{
+    font-size: 1.3vw;
+    padding: 0px 20px 120px;
+}
 
 /* ABout Us Page */
 
@@ -566,6 +630,7 @@ hr {
     height: 104px;
     padding: 0 11.5%;
     background-color: #EF413D;
+    margin-top: 180px;
 }
 
 .stay-connected-content {
@@ -881,6 +946,12 @@ body {
 		width: 110px;
 	}
 
+}
+
+@media screen and (max-width:750px ){
+    .noMobile{
+        display: none;
+    }
 }
 
 /* Old CSS */
