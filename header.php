@@ -18,8 +18,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&amp;family=PT+Serif&amp;display=swap" rel="stylesheet">
 
     
-    <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
 
@@ -36,23 +36,20 @@
               <img class="img-fluid ms-4" src="<?php echo get_theme_file_uri('/images/logo.png'); ?> " alt="logo">
           </a>
         </div>
-        <div class = "desktop_search">
-          <div class="desktop_search-form">
-          <form role="search" action="https://www.ourtownsfoundation.org/" method="get" class="search-form">
-            <label for="s">
-              <span class="screen-reader-text"></span>
-              <input type="search" name = "s" placeholder="Search" class="search-form hidden" value>
-            </label>
-              <button type="submit" class="search-form__submit">
-              <img id = "searchIcon" class = "" src="https://www.ourtownsfoundation.org/wp-content/themes/our-towns/images/search-black.png" alt="Search Submit Icon">
-                </button>
-              </form>
-              </div>
-              <button class = "desktop-search__open-search">
-                <img src= "https://www.ourtownsfoundation.org/wp-content/themes/our-towns/images/search-white.png" alt = "magnifying glass">
-            </button>
-            <a href="https://www.ourtownsfoundation.org/donations" class="nav-donation-btn nomobile">DONATE</a>
-            </div>   
+
+        <div class="box-container">
+        <?php get_template_part( 'searchbar-sidebar' ); ?>
+          <!-- <form role="search" class="box hotdogs">
+            <input class="searchbar" placeholder="Search" type="search">
+            <button type="submit" class="searchbar-button">
+              <img class="icon" src= "https://www.ourtownsfoundation.org/wp-content/themes/our-towns/images/search-black.png" alt = "magnifying glass">
+          </button>
+          </form> -->
+          <button class="searchbutton">
+            <img src= "https://www.ourtownsfoundation.org/wp-content/themes/our-towns/images/search-white.png" alt = "magnifying glass">
+          </button>
+          <a href="https://www.ourtownsfoundation.org/donations" class="nav-donation-btn nomobile">DONATE</a>
+        </div>
           </div> 
            <?php wp_nav_menu( array(
              'theme_location' => 'menu-1'

@@ -1,16 +1,30 @@
 
-$(document).ready(function() {
-  let displayInput = false;
+// $(document).ready(function() {
+//   let displayInput = false;
   
-  $("#searchIcon").click(function(){
+//   $("#searchIcon").click(function(){
 
 
 
-  })
-  function displayLoader(location, show){
-    show === true ? $(location).removeClass("hidden") : $(location).addClass("hidden");
-  }
+//   })
+//   function displayLoader(location, show){
+//     show === true ? $(location).removeClass("hidden") : $(location).addClass("hidden");
+//   }
 
+// });
+
+//Search Bar
+
+const button = document.querySelector('.searchbutton');
+
+button.addEventListener('click', function() {
+    const press = document.querySelector('.wp-block-search__inside-wrapper');
+    press.classList.toggle('display');
+});
+
+button.addEventListener('click', function() {
+    const icon = document.querySelector('.has-icon');
+    icon.classList.toggle('display');
 });
 
 // test carousel
